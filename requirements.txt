@@ -1,3 +1,4 @@
 django>=1.8.0
 yowsup-celery==0.1.4
 listenclosely==0.1.0
+-e git+https://github.com/jlmadurga/yowsup.git@issue_1181#egg=yowsup
