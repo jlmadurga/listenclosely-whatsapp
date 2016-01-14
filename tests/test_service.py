@@ -28,7 +28,8 @@ settings.configure(
     MIDDLEWARE_CLASSES=(),
     LISTENCLOSELY_YOWSUP_NUMBER="341234567",
     LISTENCLOSELY_YOWSUP_PASS="password",
-    LISTENCLOSELY_YOWSUP_TOP_LAYERS=('yowsup.layers.logger.layer.YowLoggerLayer',)
+    LISTENCLOSELY_YOWSUP_TOP_LAYERS=('yowsup.layers.logger.layer.YowLoggerLayer',),
+    LISTENCLOSELY_YOWSUP_ENCRYPTION=False
 )
 
 try:
