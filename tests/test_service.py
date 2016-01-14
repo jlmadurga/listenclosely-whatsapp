@@ -56,6 +56,6 @@ class TestService(unittest.TestCase):
         caller = mock.MagicMock()
         from listenclosely_whatsapp.service import YowsupMessageServiceBackend
         service = YowsupMessageServiceBackend(caller)
-        self.assertTrue(isinstance(service.stack.getLayer(7), YowLoggerLayer))
-        self.assertTrue(isinstance(service.stack.getLayer(8), ListenCloselyLayer))
-        self.assertTrue(isinstance(service.stack.getLayer(9), CeleryLayer))
+        self.assertTrue(isinstance(service.stack.getLayer(6), YowLoggerLayer))
+        self.assertTrue(isinstance(service.stack.getLayer(7), ListenCloselyLayer))
+        self.assertTrue(isinstance(service.stack.getLayer(8), CeleryLayer))
