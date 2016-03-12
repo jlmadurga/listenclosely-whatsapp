@@ -16,8 +16,8 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     # TODO: put package requirements here
-    'yowsup-celery==0.1.4',
-    'listenclosely==0.1.0'
+    'yowsup-celery==0.2.1',
+    'listenclosely==0.1.2'
 ]
 
 test_requirements = [

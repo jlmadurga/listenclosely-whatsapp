@@ -25,6 +25,10 @@ class TestListenCloselyLayer(YowProtocolLayerTest, ListenCloselyLayer):
             self.assertEqual(msg_to_upper.getFrom(), jid)
             self.assertEqual(msg_to_upper.getBody(), content)
             self.assertEqual(mock_stack.return_value.caller.on_message.call_count, 1)
+            args, kwargs = mock_stack.return_value.caller.on_message.call_args
+            self.assertEqual(args[0], msg.getId())
+            self.assertEqual(args[1], jid)
+            self.assertEqual(args[2], content)
         
 
 if __name__ == '__main__':
