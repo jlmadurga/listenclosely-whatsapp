@@ -26,7 +26,7 @@ test_requirements = [
 
 setup(
     name='listenclosely-whatsapp',
-    version='0.1.0',
+    version='0.1.1',
     description="ListenClosely service backend to work with Whatsapp",
     long_description=readme + '\n\n' + history,
     author="Juan Madurga",
