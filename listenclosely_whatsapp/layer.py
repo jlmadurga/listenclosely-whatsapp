@@ -16,7 +16,9 @@ class ListenCloselyLayer(YowInterfaceLayer):
         logger.info("Service receives: Message id %s" % message_protocol_entity.getId())
         self.toUpper(message_protocol_entity)
         stack = self.getStack()
-        stack.caller.on_message(message_protocol_entity.getFrom(), message_protocol_entity.getBody())
+        stack.caller.on_message( message_protocol_entity.getId(),
+                                 message_protocol_entity.getFrom(),
+                                 message_protocol_entity.getBody())
         
     def __str__(self):
         return "ListenClosely layer"        
